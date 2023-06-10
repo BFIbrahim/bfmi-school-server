@@ -1,92 +1,82 @@
 [
     {
         "_id": 1,
-        "Image": "harmonium.jpg",
+        "Image": "https://m.media-amazon.com/images/I/51jTJrQeFNL._AC_UF1000,1000_QL80_.jpg",
         "Name": "Harmonium Class",
-        "Instructor name": "David Johnson",
-        "Available seats": 20,
-        "Enrolled students": 10,
-        "Price": 50
+        "Instructor_name": "David_Johnson",
+        "Available_seats": 20,
+        "Price": 4500
     },
     {
         "_id": 2,
-        "Image": "guitar.jpg",
+        "Image": "https://breedlovemusic.com/wp-content/uploads/2022/10/WILDWOOD-PRO-CONCERTO-SUEDE-angle2.png",
         "Name": "Guitar Class",
-        "Instructor name": "Emily Thompson",
-        "Available seats": 15,
-        "Enrolled students": 8,
-        "Price": 60
+        "Instructor_name": "Emily_Thompson",
+        "Available_seats": 15,
+        "Price": 2000
     },
     {
         "_id": 3,
-        "Image": "piano.jpg",
+        "Image": "https://takelessons.com/blog/wp-content/uploads/2021/12/Getty_Image_1298950143__1683822937_17475.jpg",
         "Name": "Piano Class",
-        "Instructor name": "Michael Davis",
-        "Available seats": 12,
-        "Enrolled students": 6,
-        "Price": 70
+        "Instructor_name": "Michael_Davis",
+        "Available_seats": 8,
+        "Price": 1500
     },
     {
         "_id": 4,
-        "Image": "drum.jpg",
+        "Image": "https://hpro-web-assets.s3.amazonaws.com/insights/uploads/2017/09/concert-drums-2-e1506024425469.jpg",
         "Name": "Drum Class",
-        "Instructor name": "Sarah Wilson",
-        "Available seats": 10,
-        "Enrolled students": 5,
-        "Price": 80
+        "Instructor_name": "Sarah_Wilson",
+        "Available_seats": 100,
+        "Price": 8000
     },
     {
         "_id": 5,
-        "Image": "violin.jpg",
+        "Image": "https://images.immediate.co.uk/production/volatile/sites/24/2021/03/when-was-the-violin-invented-2ccbe78.jpg?quality=90&resize=980,654",
         "Name": "Violin Class",
-        "Instructor name": "Robert Johnson",
-        "Available seats": 18,
-        "Enrolled students": 9,
-        "Price": 55
+        "Instructor_name": "Robert_Johnson",
+        "Available_seats": 3,
+        "Price": 5500
     },
     {
         "_id": 6,
-        "Image": "flute.jpg",
+        "Image": "https://phamoxmusic.com/wp-content/uploads/2022/09/Different-Types-of-Flute-PIC-800-1024x683.jpg",
         "Name": "Flute Class",
-        "Instructor name": "Alexandra Thompson",
-        "Available seats": 15,
-        "Enrolled students": 7,
-        "Price": 65
+        "Instructor_name": "Alexandra_Thompson",
+        "Available_seats": 7,
+        "Price": 6500
     },
     {
         "_id": 7,
-        "Image": "saxophone.jpg",
+        "Image": "https://riverstreetjazzcafe.com/wp-content/uploads/2019/09/sax-river-street-jazz-cafe.jpg",
         "Name": "Saxophone Class",
-        "Instructor name": "Matthew Davis",
-        "Available seats": 10,
-        "Enrolled students": 4,
-        "Price": 75
+        "Instructor_name": "Matthew_Davis",
+        "Available_seats": 43,
+        "Price": 3000
     },
     {
         "_id": 8,
-        "Image": "cello.jpg",
+        "Image": "https://www.udiscovermusic.com/wp-content/uploads/2022/08/BestCellists_1000x600.jpg",
         "Name": "Cello Class",
-        "Instructor name": "Olivia Wilson",
-        "Available seats": 14,
-        "Enrolled students": 7,
-        "Price": 70
+        "Instructor_name": "Olivia_Wilson",
+        "Available_seats": 40,
+        "Price": 7000
     },
     {
         "_id": 9,
-        "Image": "trumpet.jpg",
+        "Image": "https://i.postimg.cc/L5cJntY8/Group-Of-Kids-Playing-Trumpets.jpg",
         "Name": "Trumpet Class",
-        "Instructor name": "Daniel Thompson",
-        "Available seats": 16,
-        "Enrolled students": 8,
-        "Price": 60
+        "Instructor_name": "Daniel_Thompson",
+        "Available_seats": 10,
+        "Price": 1200
     },
     {
         "_id": 10,
-        "Image": "ukulele.jpg",
+        "Image": "https://www.beginnerukuleles.com/wp-content/uploads/Cute-Ukuleles-Featured-Image-BeginnerUkuleles.com_-e1569649036587.jpg",
         "Name": "Ukulele Class",
-        "Instructor name": "Sophia Johnson",
-        "Available seats": 12,
-        "Enrolled students": 6,
-        "Price": 50
+        "Instructor_name": "Sophia_Johnson",
+        "Available_seats": 60,
+        "Price": 5000
     }
 ]
