@@ -1,7 +1,7 @@
 [
     {
         "_id": 1,
-        "Image": "https://m.media-amazon.com/images/I/51jTJrQeFNL._AC_UF1000,1000_QL80_.jpg",
+        "Image": "https://cdn.dribbble.com/users/430575/screenshots/2876120/media/ed2017a998aafb2bc26ef658077e03f0.png?compress=1&resize=400x300",
         "Name": "Harmonium Class",
         "Instructor_name": "David_Johnson",
         "Available_seats": 20,
@@ -9,7 +9,7 @@
     },
     {
         "_id": 2,
-        "Image": "https://breedlovemusic.com/wp-content/uploads/2022/10/WILDWOOD-PRO-CONCERTO-SUEDE-angle2.png",
+        "Image": "https://images.unsplash.com/photo-1605020420620-20c943cc4669?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGd1aXRhcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
         "Name": "Guitar Class",
         "Instructor_name": "Emily_Thompson",
         "Available_seats": 15,

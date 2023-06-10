@@ -32,7 +32,7 @@ async function run() {
         const classCollections = client.db("bfmiDB").collection("class");
 
         app.get('/class', async(req, res) => {
-            const result = await classCollections.find().toArray()
+            const result = await classCollections.find().sort({ Available_seats: 1 }).limit(6).toArray()
             res.send(result)
         })
 
