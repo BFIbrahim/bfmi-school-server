@@ -1,0 +1,92 @@
+[
+    {
+        "_id": 1,
+        "Image": "harmonium.jpg",
+        "Name": "Harmonium Class",
+        "Instructor name": "David Johnson",
+        "Available seats": 20,
+        "Enrolled students": 10,
+        "Price": 50
+    },
+    {
+        "_id": 2,
+        "Image": "guitar.jpg",
+        "Name": "Guitar Class",
+        "Instructor name": "Emily Thompson",
+        "Available seats": 15,
+        "Enrolled students": 8,
+        "Price": 60
+    },
+    {
+        "_id": 3,
+        "Image": "piano.jpg",
+        "Name": "Piano Class",
+        "Instructor name": "Michael Davis",
+        "Available seats": 12,
+        "Enrolled students": 6,
+        "Price": 70
+    },
+    {
+        "_id": 4,
+        "Image": "drum.jpg",
+        "Name": "Drum Class",
+        "Instructor name": "Sarah Wilson",
+        "Available seats": 10,
+        "Enrolled students": 5,
+        "Price": 80
+    },
+    {
+        "_id": 5,
+        "Image": "violin.jpg",
+        "Name": "Violin Class",
+        "Instructor name": "Robert Johnson",
+        "Available seats": 18,
+        "Enrolled students": 9,
+        "Price": 55
+    },
+    {
+        "_id": 6,
+        "Image": "flute.jpg",
+        "Name": "Flute Class",
+        "Instructor name": "Alexandra Thompson",
+        "Available seats": 15,
+        "Enrolled students": 7,
+        "Price": 65
+    },
+    {
+        "_id": 7,
+        "Image": "saxophone.jpg",
+        "Name": "Saxophone Class",
+        "Instructor name": "Matthew Davis",
+        "Available seats": 10,
+        "Enrolled students": 4,
+        "Price": 75
+    },
+    {
+        "_id": 8,
+        "Image": "cello.jpg",
+        "Name": "Cello Class",
+        "Instructor name": "Olivia Wilson",
+        "Available seats": 14,
+        "Enrolled students": 7,
+        "Price": 70
+    },
+    {
+        "_id": 9,
+        "Image": "trumpet.jpg",
+        "Name": "Trumpet Class",
+        "Instructor name": "Daniel Thompson",
+        "Available seats": 16,
+        "Enrolled students": 8,
+        "Price": 60
+    },
+    {
+        "_id": 10,
+        "Image": "ukulele.jpg",
+        "Name": "Ukulele Class",
+        "Instructor name": "Sophia Johnson",
+        "Available seats": 12,
+        "Enrolled students": 6,
+        "Price": 50
+    }
+]
