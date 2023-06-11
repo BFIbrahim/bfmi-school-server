@@ -30,9 +30,17 @@ async function run() {
 
 
         const classCollections = client.db("bfmiDB").collection("class");
+        const selectedClass = client.db("bfmiDB").collection("selectedClass");
 
-        app.get('/class', async(req, res) => {
-            const result = await classCollections.find().sort({ Available_seats: 1 }).limit(6).toArray()
+        app.get('/classes', async(req, res) => {
+            const result = await classCollections.find().toArray()
+            res.send(result)
+        })
+
+        app.post('/selectedClass', async(req, res) => {
+            const classes = req.body;
+            console.log(classes);
+            const result = await selectedClass.insertOne(classes)
             res.send(result)
         })
 
