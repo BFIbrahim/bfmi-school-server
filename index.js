@@ -11,7 +11,7 @@ app.use(express.json())
 
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.e86npgm.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -65,6 +65,13 @@ async function run() {
             const classes = req.body;
             console.log(classes);
             const result = await selectedClass.insertOne(classes)
+            res.send(result)
+        })
+
+        app.delete('/selectedClass/:id', async(req, res) => {
+            const id = req.params.id;
+            const query = { _id: new ObjectId(id)};
+            const result = selectedClass.deleteOne(query)
             res.send(result)
         })
 
