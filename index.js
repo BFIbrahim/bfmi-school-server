@@ -29,14 +29,43 @@ async function run() {
         await client.connect();
 
 
+        const usersCollections = client.db("bfmiDB").collection("users");
         const classCollections = client.db("bfmiDB").collection("class");
         const selectedClass = client.db("bfmiDB").collection("selectedClass");
 
 
+        /**
+         * =========================================
+         * User Data Collections
+         * =========================================
+         * 
+         */
+        
+        app.get('/users', async(req, res) => {
+            const result = await usersCollections.find().toArray();
+            response.send(result)
+        })
 
-        /** ============================
-         *           Classes Data
-         *  ============================
+
+        app.post('/users', async(req, res) => {
+            const user = req.body;
+            console.log(user);
+            const query = {email: user.email}
+            const existingUser = await usersCollections.findOne(query)
+            console.log(existingUser);
+            if(existingUser){
+                return res.send({message: 'User Already Exist'})
+            }
+            const result = await usersCollections.insertOne(user)
+            res.send(result)
+        })
+
+
+
+
+        /** =================================
+         *           Classes Collections
+         *  =================================
          * */
 
         app.get('/classes', async (req, res) => {
@@ -46,9 +75,9 @@ async function run() {
 
 
         /**
-         * ==================
-         * Selected Class
-         * ==================
+         * =================================
+         * Selected Calss Collections
+         * =================================
          */
 
         app.get('/selectedClass', async (req, res) => {
@@ -68,6 +97,11 @@ async function run() {
             res.send(result)
         })
 
+        /*
+            ================================
+            Delete Selected Class Collection
+            ================================
+        */  
         app.delete('/selectedClass/:id', async(req, res) => {
             const id = req.params.id;
             const query = { _id: new ObjectId(id)};
