@@ -90,16 +90,31 @@ async function run() {
             res.send(result)
         });
 
-        app.get('/users/admin/:email', verifyJwt, async(req, res) => {
+        // Check Admin
+        app.get('/users/admin/:email', verifyJwt, async (req, res) => {
             const email = req.params.email;
-            
-            if(req.decoded.email !== email){
-                res.send({admin: false})
+
+            if (req.decoded.email !== email) {
+                res.send({ admin: false })
             }
 
-            const query = {email: email}
+            const query = { email: email }
             const user = await usersCollections.findOne(query);
-            const result  = {admin: user?.role === 'admin'}
+            const result = { admin: user?.role === 'admin' }
+            res.send(result)
+        })
+
+        // check instractor
+        app.get('/users/insractor/:email', verifyJwt, async (req, res) => {
+            const email = req.params.email;
+
+            if (req.decoded.email !== email) {
+                res.send({ instractor: false })
+            }
+
+            const query = { email: email }
+            const user = await usersCollections.findOne(query);
+            const result = { instractor: user?.role === 'instractor' }
             res.send(result)
         })
 
